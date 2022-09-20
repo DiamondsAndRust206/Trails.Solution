@@ -8,7 +8,7 @@ using TrailsApi.Models;
 namespace Business.Migrations
 {
     [DbContext(typeof(TrailsApiContext))]
-    [Migration("20220911183132_Initial")]
+    [Migration("20220914000904_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
