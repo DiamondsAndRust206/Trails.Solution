@@ -1,6 +1,6 @@
 # All Trails Lead To Roam
 
-#### By Patty Rose, Megan McKissack, Louie Knolle, Ryan Gibson
+#### By Megan McKissack, Louie Knolle, Ryan Gibson, Patty Rose
 
 ![Dev Team](/img/devsPic.jpg)
 
@@ -9,6 +9,10 @@
 ## Technologies Used
 
 * C#
+* HTML
+* CSS
+* Javascript
+* Bootstrap
 * MySQL Workbench
 * ASP.NET
 * Entity Framework
@@ -17,12 +21,12 @@
 
 ## Description
 
-It is a web API designed with a purpose of enabling local community to add local businesses that are in the community and be able to get information about the businesses that run with in the community. The application has featured a technology _Swagger_ that enables API's to have a friendly UI that makes user's to ADD,GET,EDIT and DELETE information easily in the Web-Page.
+This web application uses ArcGIS maps in conjunction with our Trails api. With the Trails api you can place makers on the map to create hiking trails. Click on the map to get the latitude and longitude, then you can add a name and description. Do this as many times as you like to create the trail you want and place landmarks along the way!
 
 ## Setup/Installation
 
 * First, make sure you have MySql Workbench downloaded and properly installed. You will also need a text editor(Vscode was used to make this application)
-* At https://github.com/DiamondsAndRust206/LocalBusiness.Solution.git copy the git repository URL from the green "code" button.
+* At https://github.com/patty-rose/Trails.Solution.git copy the git repository URL from the green "code" button.
 * Open a shell program & navigate to your desktop
 * Clone the repository using the copied URL and the "git clone" command
 * Make sure sensitive data/files are in the .gitignore file so they to no get pushed to a remote repository. The files in .gitignore should be:
@@ -33,13 +37,13 @@ It is a web API designed with a purpose of enabling local community to add local
   */appsettings.json
 ```
 
-* In the shell program, navigate to the root directory of the newly created file called "LocalBusiness.Solution"
-* In the LocalBusinessApi directory create a file named "appsettings.json"
+* In the shell program, navigate to TrailsApi directory of "Trails.Solution"
+* In the TrailsApi directory create a file named "appsettings.json"
 * Add the following code to the newly created .json file
 ```
 {
   "ConnectionStrings": {
-      "DefaultConnection": "Server=localhost;Port=3306;database=local_business;uid=root;pwd=epicodus;"
+      "DefaultConnection": "Server=localhost;Port=3306;database=trails;uid=root;pwd=epicodus;"
   }
 }
 ```
@@ -55,7 +59,7 @@ It is a web API designed with a purpose of enabling local community to add local
   * `dotnet run`
 
 * The above code will create a new database in your local host with tables designed to store information related to the project.
-* To interact with the local host website navigate to the project directory and run `dotnet run`or `dotnet watch run` then type http://localhost:5000 into the URL bar in the browser.
+* To interact with the local host website navigate to the project directories Trails Api and TrailsClient and run `dotnet run`or `dotnet watch run` for each, then type http://localhost:5001 into the URL bar in the browser.
 
 ## Known Bugs
 
@@ -65,7 +69,7 @@ It is a web API designed with a purpose of enabling local community to add local
 
 [MIT](LICENSE)
 
-Copyright (c) 2022 Timothy R Gibson
+Copyright (c) 2022 Megan McKissack, Louie Knolle, Ryan Gibson, Patty Rose
 
 
 
